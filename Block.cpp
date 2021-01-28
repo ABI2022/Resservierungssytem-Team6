@@ -28,12 +28,23 @@ bool Block::gibPlatzFrei(int r, int p) {
 	}
 }
 
+void Block::empty() {
+	for (int i = 0; i < REIHEN; i++) {
+		for (int ii = 0; ii < PLAETZE; ii++) {
+			belegung[i][ii] = false;
+		}
+	}
+}
+
 string Block::getName() {
 	return bezeichnung;
 }
 
 Block::Block(string name) {
 	bezeichnung = name;
+	empty();
 }
-Block::Block() {}
+Block::Block() {
+	empty();
+}
 Block::~Block() {}
