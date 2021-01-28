@@ -1,6 +1,4 @@
-#include <iostream>
-#include <string.h>
-using namespace std;
+#include "util.h"
 
 #include "Block.h"
 

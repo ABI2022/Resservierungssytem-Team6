@@ -1,6 +1,6 @@
 #pragma once
 
-
+#include "util.h"
 
 class Block
 {
@@ -13,8 +13,9 @@ private:
 
 public:
 	bool istFrei(int r, int p);
-	void belegePlatz(int r, int p);
-	void gibPlatzFrei(int r, int p);
+	bool belegePlatz(int r, int p);
+	bool gibPlatzFrei(int r, int p);
+	string getName();
 
 	Block(string name);
 	Block();
