@@ -1,8 +1,15 @@
 #pragma once
-#include "Reservierung.h"
+
+//#include "Reservierung.h"
+class Reservierung;// Vorwärtsdeklaration
+
 #include <string>
 #include <list>
+
 using namespace std;
+
+
+	//sonst syntax fehler 
 class Kunde
 {
 private:
@@ -16,4 +23,3 @@ public:
 	double berechneGesamtUmsatz();
 	~Kunde();
 };
-
