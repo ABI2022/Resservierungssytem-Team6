@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Block.h" />
+    <ClInclude Include="Reservierung.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>

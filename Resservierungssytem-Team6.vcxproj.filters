@@ -24,6 +24,12 @@
     <ClCompile Include="System.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CDatum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reservierung.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Block.h">
@@ -39,9 +45,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Reservierung.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CDatum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

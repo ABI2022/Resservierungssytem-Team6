@@ -1,15 +1,14 @@
 #pragma once
-//#include "CDatum.h"
+#include "CDatum.h"
 //#include "Kunde.h"
 //#include "Block.h"
 //#include "Spiel.h"
 class Spiel;
-class CDatum;
 class Block;
 class Kunde;
 class Reservierung
 {
-	private:
+		private:
 	static int autonr;
 	int nummer;
 	CDatum datum;
@@ -19,10 +18,9 @@ class Reservierung
 	Kunde* kunde;
 	Spiel* spiel;
 	Block* block;
-	public:
+		public:
 	Reservierung(Kunde*, Spiel*, Block*, int r, int vp, int bp);
 	int getvonPlatz();
 	int getbisPlatz();
 	~Reservierung();
 };
-
