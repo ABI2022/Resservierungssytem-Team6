@@ -2,6 +2,7 @@
 #include "Reservierung.h"
 #include "Block.h"
 
-int main() {
+int main() 
+{
   std::cout << "Hello World!\n";
 }

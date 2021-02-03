@@ -1,5 +1,5 @@
 #include "Kunde.h"
-
+#include "Reservierung.h"
 Kunde::Kunde(string name)
 {
 	this->name = name;
@@ -22,6 +22,7 @@ double Kunde::berechneGesamtUmsatz()
 	double ergebnis;
 	double ppp=50; ///ppp=preisproplatz
 	int counter=0;
+	list<Reservierung*>::iterator iter;
 	for (auto pos : reservierungen) 
 	{
 		counter += abs(pos->getvonPlatz() - pos->getbisPlatz());
