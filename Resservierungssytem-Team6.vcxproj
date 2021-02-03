@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Block.cpp" />
+    <ClCompile Include="Kunde.cpp" />
     <ClCompile Include="Resservierungssytem-Team6.cpp" />
     <ClCompile Include="System.cpp" />
   </ItemGroup>
@@ -147,6 +148,9 @@
     <ClInclude Include="Block.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Kunde.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
