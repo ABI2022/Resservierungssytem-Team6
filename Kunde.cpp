@@ -6,6 +6,11 @@ Kunde::Kunde(string name)
 	passwort = "";
 }
 
+string Kunde::getName()
+{
+	return name;
+}
+
 void Kunde::hinzufuegenReservierung(Reservierung* r)
 {
 	reservierungen.push_back(r);

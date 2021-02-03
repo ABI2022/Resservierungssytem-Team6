@@ -13,6 +13,7 @@ private:
 	list <Reservierung*> reservierungen;
 public:
 	Kunde(string name);
+	string getName();
 	void hinzufuegenReservierung(Reservierung*);
 	void loescheReservierung(Reservierung*);
 	double berechneGesamtUmsatz();
