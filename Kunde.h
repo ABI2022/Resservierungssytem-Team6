@@ -1,4 +1,5 @@
 #pragma once
+#include "Reservierung.h"
 #include <string>
 #include <list>
 using namespace std;
@@ -7,7 +8,7 @@ class Kunde
 private:
 	string name;
 	string passwort;
-	list <*Reservierung> reservierungen;
+	list <Reservierung*> reservierungen;
 public:
 	Kunde(string name);
 	void hinzufuegenReservierung(Reservierung*);

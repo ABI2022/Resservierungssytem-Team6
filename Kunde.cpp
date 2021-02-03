@@ -18,7 +18,16 @@ void Kunde::loescheReservierung(Reservierung* r)
 
 double Kunde::berechneGesamtUmsatz()
 {
-	return 0;
+	//improvisiert,dass es einen festen preis pro Platz gibt, da keine Datenbank vorhanden ist
+	double ergebnis;
+	double ppp=50; ///ppp=preisproplatz
+	int counter=0;
+	for (auto pos : reservierungen) 
+	{
+		counter += abs(pos->getvonPlatz() - pos->getbisPlatz());
+	}
+	ergebnis = counter * ppp;
+	return ergebnis;
 }
 
 Kunde::~Kunde()
