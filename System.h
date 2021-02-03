@@ -12,7 +12,7 @@ class System {
 		list<Spiel*> spiele;
 		list<Reservierung*> reservierung;
 
-        void hinzufügenReservierung(Reservierung);
+        void hinzufügenReservierung(Reservierung*);
 
     public:
         Reservierung reservierePlatz(Kunde, Spiel, string, int, int, int);
