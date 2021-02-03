@@ -22,7 +22,7 @@ void Spiel::loescheReservierung(Reservierung* r)
 {
 	for (Reservierung* R : ReservierungsListe)
 	{
-		if (R->getNummer() == r)
+		if (R == r)
 		{
 			ReservierungsListe.remove(R);
 			delete static_cast<Reservierung*>(r);
@@ -32,9 +32,10 @@ void Spiel::loescheReservierung(Reservierung* r)
 }
 
 
-Block Spiel::sucheBlock(string bezeichnung)
+Block* Spiel::sucheBlock(string bezeichnung)
 {
-  
+	//TODO implementieren
+  return nullptr;
 }
 
 

@@ -1,10 +1,12 @@
 #pragma once
 #include "util.h"
-#include "Block.h"
+
+
 class Reservierung;
-class CDatum;
+
 class Spiel
-{
+
+	{
 private:
 	int spielNr;
 	CDatum* zeit;
@@ -18,7 +20,7 @@ public:
 	~Spiel();
 	Spiel(int spielNr, CDatum* zeit, string stadion);
 	void loescheReservierung(Reservierung* r);
-	Block sucheBlock(string bezeichnung);
+	Block* sucheBlock(string bezeichnung);
 	void hinzufuegenReservierung(Reservierung* r);
 
 	int getSpielNr();
