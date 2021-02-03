@@ -22,7 +22,6 @@ double Kunde::berechneGesamtUmsatz()
 	double ergebnis;
 	double ppp=50; ///ppp=preisproplatz
 	int counter=0;
-	list<Reservierung*>::iterator iter;
 	for (auto pos : reservierungen) 
 	{
 		counter += abs(pos->getvonPlatz() - pos->getbisPlatz());
